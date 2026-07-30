@@ -1,6 +1,6 @@
 context:
   name: geff
-  version: "1.2.0.1.1"
+  version: "1.3.0.1.2"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: 4be5989ec1df335158aed027056cebf14fbc5d3848d4927bd5711cfbc7e1da41
+  sha256: 62c96fb85761c82f612ce84f3f9bdf793fbb1b05891a8d12ef268f6f792248b4
 
 build:
   noarch: python
@@ -25,7 +25,7 @@ requirements:
     - python >=${{ python_min }}
     - pydantic >=2.11
     - numpy
-    - geff-spec <1.2
+    - geff-spec <1.3
     - typer >=0.14.0
     - zarr >=2.18,<4.0
     - networkx >=3.2.1
