@@ -1,6 +1,6 @@
 context:
   name: geff
-  version: "1.3.1.1.3"
+  version: "1.4.0.1.3"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: 318233ced75ffac29a6ecd813b3cf872ff57bb83e2f28bb64a81628a8d9ac2da
+  sha256: 97cfcd7e9a849540f057776f42a945b99a89d861d578c4f7943ccc9e34ab985d
 
 build:
   noarch: python
